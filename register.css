@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Public sans', sans-serif;
+}
+
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* padding: 3em 5em; */
+
+}
+
+
+
+/* first wrap */
+.main-wrapper .first-wrap {
+    /* background-color: #68D585; */
+    background-image: url(images/BG.webp);
+    /* background-position: center; */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: auto;
+    padding: 4em 2em;
+    /* display: grid; */
+    place-content: center;
+}
+
+.main-wrapper .text h1 {
+    color: white;
+    font-size: 2.3em;
+    font-weight: bold;
+    padding: 0.2em;
+}
+
+.main-wrapper .text p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.2em;
+    line-height: 1.7;
+    margin-top: 10px;
+
+}
+
+.main-wrapper .text p span {
+    color: orange;
+}
+
+.img-wrap {
+    margin-top: 5em;
+}
+
+.img-wrap img {
+    width: 100%;
+}
+
+/* end of first Wrap */
+
+
+
+/* Second wrap */
+
+.second-wrap {
+    padding: 4em 4em;
+    height: auto;
+}
+
+.second-wrap .button {
+    display: flex;
+    justify-content: right;
+
+}
+
+.second-wrap a button {
+    padding: 1em;
+    border-radius: 45px;
+    border: none;
+    background-color: gainsboro;
+    font-weight: bold;
+}
+
+.second-wrap .heading {
+    line-height: 1.6;
+    margin: 1em 0;
+    margin-bottom: 40px;
+}
+
+.heading h1 {
+    font-size: 24px;
+    color: #060606;
+    text-align: center;
+}
+
+.heading p {
+    color: #5B5B5B;
+}
+
+
+.form-container .name-flex {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+
+}
+
+.name-flex .form-control {
+    width: 50%;
+}
+
+.form-container .name-flex input {
+
+    padding: 16px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 14px;
+    height: 3rem;
+    background-color: inherit;
+    border: 1px solid #D6D6D6;
+    color: #5B5B5B;
+}
+
+.form-control p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #5B5B5B;
+}
+
+.form-control input {
+    padding: 16px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 14px;
+    height: 3rem;
+    background-color: inherit;
+    border: 1px solid #D6D6D6;
+    color: #5B5B5B;
+}
+
+.form-control input:focus {
+    border: 2px solid rgb(42, 195, 206);
+    outline: 0;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control .input-img {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.input-img img {
+    width: 4%;
+}
+
+.p-tag {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.p-tag p {
+    text-align: center;
+    font-size: 15px;
+    color: #5B5B5B;
+}
+
+.p-tag span {
+    color: rgb(128, 16, 172);
+    cursor: pointer;
+}
+
+
+.signup a button {
+    padding: 16px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    place-items: center;
+    height: 3rem;
+    background-color: rgb(168, 114, 168);
+    border: none;
+    color: white;
+    align-items: center;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 30px;
+}
+
+.signup a button:hover {
+    background-color: #db18e2;
+    cursor: pointer;
+    transition: 1.3s;
+}
+
+/* End of seecond-wrap */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:992px) {
+
+
+    .main-wrapper {
+        width: 100%;
+        padding: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+
+    .first-wrap {
+        display: none;
+    }
+
+    .heading h1{
+        font-size: 28px;
+    }
+
+    .heading p{
+
+        font-size: 17px;
+
+    }
+    .second-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        width: 100%;
+        padding: 1em;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .second-wrap .button a button {
+        padding: 1em 2em;
+        border-radius: 45px;
+        border: none;
+        background-color: gainsboro;
+        font-weight: bold;
+    } */
+
+    .name-flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1em;
+    }
+
+    .name-flex .form-control:nth-child(2){
+        margin-top: -15px;
+    }
+
+    .name-flex .form-control{
+        width: 100%;
+        gap: auto;
+    }
+
+    .input-img img {
+        width: 6%;
+        margin-left: 0.5em;
+    }
+}
+
+
+
+
+@media (max-width:414) {
+    .heading h1{
+        font-size: 20px;
+    }
+
+    .heading p{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
